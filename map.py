@@ -9,15 +9,20 @@ print(colleges.head())
 name = list(colleges['instnm'])
 lat = list(colleges['LATITUDE (HD2017)'])
 lng = list(colleges['LONGITUD (HD2017)'])
+
+def color_producer(name):
+    if name == "Kyle's Home":
+        return 'blue'
+    elif name == 'Harvard of Central Minnesota':
+        return 'red'
+    else:
+        return 'green'
 map = folium.Map(location = [40,-94], zoom_start = 5, tiles = "Mapbox Bright")
 
 fg = folium.FeatureGroup(name = 'My Map')
 
 for lt, ln, nm in zip (lat, lng, name):
-    fg.add_child(folium.Marker(location = [lt,ln], popup = f'{nm}', icon = folium.Icon(color = 'blue')))
-
-fg.add_child(folium.Marker(location = [45.548611, -94.151944], popup = "Harvard of Central Minnesota", icon = folium.Icon(color = 'red')))
-fg.add_child(folium.Marker(location = [44.928121, -93.3474], popup = "Kyle's Home", icon = folium.Icon(color = 'green')))
+    fg.add_child(folium.Marker(location = [lt,ln], popup = f'{nm}', icon = folium.Icon(color = color_producer(nm))))
 
 map.add_child(fg)
 
