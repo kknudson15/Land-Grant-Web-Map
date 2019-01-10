@@ -17,7 +17,7 @@ def color_producer(name):
     inputs: string name of college
     Ouputs: returns color of the marker to be used.
     '''
-    if name == "Kyle's Home":
+    if name == "Microsoft Headquarters":
         return 'blue'
     elif name == 'Harvard of Central Minnesota':
         return 'red'
