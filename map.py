@@ -24,7 +24,12 @@ fg = folium.FeatureGroup(name = 'My Map')
 for lt, ln, nm in zip (lat, lng, name):
     fg.add_child(folium.Marker(location = [lt,ln], popup = f'{nm}', icon = folium.Icon(color = color_producer(nm))))
 
-fg.add_child(folium.GeoJson(data=(open('world.json', 'r', encoding = 'utf-8-sig').read())))
+fg.add_child(folium.GeoJson(data=open('world.json', 'r', encoding = 'utf-8-sig').read(),
+style_function = lambda x: {'fillColor': 'green' if x['properties']['POP2005']<1000000 
+else 'yellow' if 1000000 <= x['properties']['POP2005'] < 100000000 
+else 'orange' if 100000000 <= x['properties']['POP2005'] < 150000000
+else 'red' }))
+
 
 
 map.add_child(fg)
