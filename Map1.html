@@ -17,7 +17,7 @@
     
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <style>#map_67f4f9aece1f470597a64065217e1c59 {
+    <style>#map_e7b320b063094a5ca6fd80f3b0cb8328 {
         position: relative;
         width: 100.0%;
         height: 100.0%;
@@ -28,7 +28,7 @@
 </head>
 <body>    
     
-    <div class="folium-map" id="map_67f4f9aece1f470597a64065217e1c59" ></div>
+    <div class="folium-map" id="map_e7b320b063094a5ca6fd80f3b0cb8328" ></div>
 </body>
 <script>    
     
@@ -36,8 +36,8 @@
         var bounds = null;
     
 
-    var map_67f4f9aece1f470597a64065217e1c59 = L.map(
-        'map_67f4f9aece1f470597a64065217e1c59', {
+    var map_e7b320b063094a5ca6fd80f3b0cb8328 = L.map(
+        'map_e7b320b063094a5ca6fd80f3b0cb8328', {
         center: [40, -94],
         zoom: 5,
         maxBounds: bounds,
@@ -49,7 +49,7 @@
 
     
     
-    var tile_layer_5f9dc8cbf7cb46179409878772bdd05c = L.tileLayer(
+    var tile_layer_04293486da4a4e6d99dbea73116bd310 = L.tileLayer(
         'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
         {
         "attribution": null,
@@ -61,71 +61,75 @@
         "opacity": 1,
         "subdomains": "abc",
         "tms": false
-}).addTo(map_67f4f9aece1f470597a64065217e1c59);
+}).addTo(map_e7b320b063094a5ca6fd80f3b0cb8328);
     
-        var marker_c6659488216f44918ce21b6a9528b0f4 = L.marker(
+            var feature_group_f4c30dc7c78a455fba37a6fac87761cf = L.featureGroup(
+                ).addTo(map_e7b320b063094a5ca6fd80f3b0cb8328);
+        
+    
+        var marker_9159d0b9c7b94dd9b16a5a82490745de = L.marker(
             [45.548611, -94.151944],
             {
                 icon: new L.Icon.Default()
                 }
-            ).addTo(map_67f4f9aece1f470597a64065217e1c59);
+            ).addTo(feature_group_f4c30dc7c78a455fba37a6fac87761cf);
         
     
 
-                var icon_22d0dca1cfb04609823dcadeaa8553e4 = L.AwesomeMarkers.icon({
+                var icon_b478b22b1d8c4eb1a1074733c7d318c8 = L.AwesomeMarkers.icon({
                     icon: 'info-sign',
                     iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_c6659488216f44918ce21b6a9528b0f4.setIcon(icon_22d0dca1cfb04609823dcadeaa8553e4);
+                marker_9159d0b9c7b94dd9b16a5a82490745de.setIcon(icon_b478b22b1d8c4eb1a1074733c7d318c8);
             
     
-            var popup_566cea4edf204885b10f20a0b9123eb3 = L.popup({maxWidth: '300'
+            var popup_25b9e25826bf45c3ad71b7e8ab08e7d0 = L.popup({maxWidth: '300'
             
             });
 
             
-                var html_aff50580728d499facf050d8a7842a17 = $(`<div id="html_aff50580728d499facf050d8a7842a17" style="width: 100.0%; height: 100.0%;">Harvard of Central Minnesota</div>`)[0];
-                popup_566cea4edf204885b10f20a0b9123eb3.setContent(html_aff50580728d499facf050d8a7842a17);
+                var html_8a97e17690f3412a8877502e9ce65420 = $(`<div id="html_8a97e17690f3412a8877502e9ce65420" style="width: 100.0%; height: 100.0%;">Harvard of Central Minnesota</div>`)[0];
+                popup_25b9e25826bf45c3ad71b7e8ab08e7d0.setContent(html_8a97e17690f3412a8877502e9ce65420);
             
 
-            marker_c6659488216f44918ce21b6a9528b0f4.bindPopup(popup_566cea4edf204885b10f20a0b9123eb3)
+            marker_9159d0b9c7b94dd9b16a5a82490745de.bindPopup(popup_25b9e25826bf45c3ad71b7e8ab08e7d0)
             ;
 
             
         
     
-        var marker_9caac6618618481694c916fcc19a217e = L.marker(
+        var marker_4bfe9fb380dc4a3d957a5d6943096a24 = L.marker(
             [44.928121, -93.3474],
             {
                 icon: new L.Icon.Default()
                 }
-            ).addTo(map_67f4f9aece1f470597a64065217e1c59);
+            ).addTo(feature_group_f4c30dc7c78a455fba37a6fac87761cf);
         
     
 
-                var icon_02a6e5a22b2c4035afc5d61286c05953 = L.AwesomeMarkers.icon({
+                var icon_7005c1c6675b4826afd79758397b474e = L.AwesomeMarkers.icon({
                     icon: 'info-sign',
                     iconColor: 'white',
                     markerColor: 'green',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_9caac6618618481694c916fcc19a217e.setIcon(icon_02a6e5a22b2c4035afc5d61286c05953);
+                marker_4bfe9fb380dc4a3d957a5d6943096a24.setIcon(icon_7005c1c6675b4826afd79758397b474e);
             
     
-            var popup_06efb5e09e19402aa54153d28bd4fe30 = L.popup({maxWidth: '300'
+            var popup_877bb7f97e3a428aa58c3c0dd43ff6e5 = L.popup({maxWidth: '300'
             
             });
 
             
-                var html_6776257d43ef45e6a479d7bee5f4b011 = $(`<div id="html_6776257d43ef45e6a479d7bee5f4b011" style="width: 100.0%; height: 100.0%;">Kyle's Home</div>`)[0];
-                popup_06efb5e09e19402aa54153d28bd4fe30.setContent(html_6776257d43ef45e6a479d7bee5f4b011);
+                var html_4b5e4591acc04b47939b669f8f52609d = $(`<div id="html_4b5e4591acc04b47939b669f8f52609d" style="width: 100.0%; height: 100.0%;">Kyle's Home</div>`)[0];
+                popup_877bb7f97e3a428aa58c3c0dd43ff6e5.setContent(html_4b5e4591acc04b47939b669f8f52609d);
             
 
-            marker_9caac6618618481694c916fcc19a217e.bindPopup(popup_06efb5e09e19402aa54153d28bd4fe30)
+            marker_4bfe9fb380dc4a3d957a5d6943096a24.bindPopup(popup_877bb7f97e3a428aa58c3c0dd43ff6e5)
             ;
 
             
