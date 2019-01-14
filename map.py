@@ -10,6 +10,8 @@ the world. The populations are broken down by groups of populations.
 #libraries needed to create web map and process data
 import folium 
 import pandas as pd 
+import webbrowser
+import os
 
 def color_producer(name):
     '''
@@ -62,3 +64,5 @@ map.add_child(fgp)
 map.add_child(folium.LayerControl())
 #Saves the map
 map.save("Map1.html")
+
+webbrowser.open('file://' + os.path.realpath('Map1.html'))
